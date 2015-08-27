@@ -1,0 +1,8 @@
+#################
+## Express
+#################
+
+## Ignore binaries
+.idea/
+mean-test/bin
+mean-test/node_modules
