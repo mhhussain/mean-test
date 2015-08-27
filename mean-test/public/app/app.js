@@ -1,5 +1,10 @@
+"use strict";
 (function() {
     var app = angular.module("app", ["ui.router"]);
+
+    app.init = function() {
+        angular.bootstrap(document, ["app"]);
+    };
 
     app.config([
         "$stateProvider",
@@ -54,4 +59,5 @@
         }
     ]);
 
+    return app;
 })();

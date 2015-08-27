@@ -10,6 +10,11 @@ var users = require('./routes/users');
 
 var app = express();
 
+// Mongoose
+var mongoose = require("mongoose");
+require("./models/Items");
+mongoose.connect("mongodb://localhost/items");
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
