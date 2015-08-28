@@ -1,6 +1,8 @@
 <html>
 <head lang="en">
     <title>App!</title>
+    <script src="bower_components/require/build/require.min.js"></script>
+    <script src="/app/requireconfig.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -8,18 +10,7 @@
 
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body ng-app="app" ng-controller="AppController">
-    <div ng-repeat="post in posts">
-        {{ post }}
-    </div>
-    <button ng-click="click()">click</button>
-
+<body>
     <ui-view></ui-view>
-
-    <script type="text/ng-template" id="/home.html">
-        <div class="page-header">
-            <h1>Ideas</h1>
-        </div>
-    </script>
 </body>
 </html>

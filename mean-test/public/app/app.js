@@ -1,5 +1,5 @@
 "use strict";
-(function() {
+define(function() {
     var app = angular.module("app", ["ui.router"]);
 
     app.init = function() {
@@ -26,7 +26,9 @@
         }
     ]);
 
-    app.controller("AppController", [
+
+
+    /*app.controller("AppController", [
         "$scope",
         function($scope) {
 
@@ -48,16 +50,6 @@
                 ];
             };
         }
-    ]);
+    ]);*/
 
-    app.controller("PostsController", [
-        "$scope",
-        "$stateParams",
-        "posts",
-        function($scope, $stateParams, posts) {
-
-        }
-    ]);
-
-    return app;
 })();
